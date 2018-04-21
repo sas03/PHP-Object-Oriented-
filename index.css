@@ -1,0 +1,311 @@
+            html {
+                height: 100%;
+            }
+            
+            body {
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .topnav {
+                overflow: hidden;
+                background-color: #273c75;
+            }
+            
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+            .topnav a.active {
+                background-color: #273c75;
+                color: white;
+            }
+            
+            .topnav .search-container {
+                float: right;
+            }
+            
+            .topnav input[type=text] {
+                padding: 6px;
+                margin-top: 8px;
+                font-size: 17px;
+                border: none;
+            }
+            
+            .topnav .search-container button {
+                float: right;
+                padding: 6px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                background: #ddd;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .topnav .search-container button:hover {
+                background: #ccc;
+            }
+            
+            @media screen and (max-width: 600px) {
+                .topnav .search-container {
+                    float: none;
+                }
+                .topnav a,
+                .topnav input[type=text],
+                .topnav .search-container button {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+                .topnav input[type=text] {
+                    border: 1px solid #ccc;
+                }
+            }
+            
+            .footer {
+                height: 100px;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #0652DD;
+                color: white;
+                text-align: center;
+                margin-top: -20px;
+            }
+            
+            .bloctxt {
+                padding: 40px;
+                width: 60%;
+                height: 5px;
+                margin-left: 20px;
+            }
+            
+            .bloctxt:nth-child(odd) {
+                background: #2c3e50;
+                border: 2px solid white;
+            }
+            
+            .bloctxt:nth-child(4n+0) {
+                background: #34495e;
+                border: 2px solid white;
+            }
+            
+            #wrapper {
+                counter-reset: count;
+            }
+            
+            #wrapper .bloctxt h3:before {
+                content: counter(count)'. ';
+                counter-increment: count;
+            }
+            
+            #empty {
+                width: 90%;
+                height: 500px;
+            }
+            
+            .bloctxt1 {
+                color: azure;
+                padding: 50px;
+                width: 20%;
+                height: 100px;
+                margin-top: -850px;
+                min-width: 10px;
+                background: black;
+            }
+            
+            a {
+                color: white;
+            }
+            
+            .bloctxt2 {
+                color: azure;
+                padding: 50px;
+                width: 20%;
+                height: 200px;
+                margin-top: -750px;
+            }
+            
+            .bloctxt2:nth-child(odd) {
+                color: azure;
+                background: black;
+                border: 2px solid white;
+            }
+            
+            .bloctxt2:nth-child(even) {
+                color: azure;
+                background: #0a3d62;
+                border: 2px solid white;
+                border-radius: 15px;
+            }
+            
+            .mot {
+                background: white;
+                width: 100px;
+                height: 100px;
+            }
+            
+            ul {
+                white-space: nowrap;
+                display: inline-block;
+                width: 100%;
+                margin-left: 100px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #F8EFBA;
+                overflow: auto;
+            }
+            
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            li a:hover {
+                background-color: #111;
+            }
+            /* Style the label to display next to the inputs */
+            
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            /* Style the container */
+            
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            /* Floating column for labels: 25% width */
+            
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            /* Floating column for inputs: 75% width */
+            
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+            /* Clear floats after the columns */
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            
+            @media screen and (max-width: 600px) {
+                .col-25,
+                .col-75,
+                input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+            
+            .bloctxt3 {
+                color: azure;
+                padding: 50px;
+                width: 20%;
+                height: 200px;
+                margin-top: -350px;
+            }
+            
+            .bloctxt3:nth-child(odd) {
+                color: azure;
+                background: black;
+                border: 2px solid white;
+            }
+            
+            .bloctxt3:nth-child(even) {
+                color: azure;
+                background: black;
+                border: 2px solid white;
+                border-radius: 15px;
+            }
+            
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            @media screen and (max-width: 600px) {
+                .bloctxt1 {
+                    float: none;
+                    width: 0%;
+                    flex: 50%;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                .row {
+                    flex-direction: column;
+                }
+            }
+            
+            .ex {
+                background: #182C61;
+                width: 100%;
+                height: 100px;
+            }
+            
+            .ainsi {
+                width: 100%;
+                height: 700px;
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 100%;
+                border: 1px solid #242831;
+                color: red;
+            }
+            
+            th,
+            td {
+                text-align: left;
+                padding: 16px;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #242831;
+            }
